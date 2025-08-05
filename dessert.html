@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Your Desser</title>
+    <style>
+        .back-to-top {
+            display: inline-block;
+            background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+            color: #4b2e05 !important;
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-weight: bold;
+            margin-top: 16px;
+            text-decoration: none !important;
+            box-shadow: 0 2px 8px rgba(139,69,19,0.10);
+            border: 1px solid #e2b700;
+            transition: background 0.2s, color 0.2s;
+        }
+        .back-to-top:hover {
+            background: linear-gradient(90deg, #ffe066 0%, #ffd700 100%);
+            color: #8B4513 !important;
+        }
+        
+        .dessert-header {
+            text-align: center;
+            font-size: 2.2em;
+            color: #fff;
+            background: linear-gradient(90deg, #f6ff47 0%, #a49810 100%);
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            padding: 20px 0 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .dessert-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .dessert-card {
+            background: #fffbe7;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            width: 170px;
+            padding: 18px 12px 14px 12px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .dessert-card:hover {
+            transform: translateY(-8px) scale(1.04);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+        }
+        .dessert-card .dessert-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #8B4513;
+            margin-bottom: 4px;
+        }
+        .dessert-emoji {
+            font-size: 2.5em;
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dessert-header">Pick your dessert</h1>
+    <div class="dessert-cards">
+
+        <a href="#cake-section" class="dessert-card" style="text-decoration:none; color:inherit;">
+            <span class="dessert-emoji">🍰</span>
+            <div class="dessert-title">Cake</div>
+        </a>
+        <a href="#gulabjamun-section" class="dessert-card" style="text-decoration:none; color:inherit;">
+            <span class="dessert-emoji">🧆</span>
+            <div class="dessert-title">Gulabjamun</div>
+        </a>
+        <a href="#icecream-section" class="dessert-card" style="text-decoration:none; color:inherit;">
+            <span class="dessert-emoji">🍦</span>
+            <div class="dessert-title">Ice Cream</div>
+        </a>
+        <a href="#kalakhand-section" class="dessert-card" style="text-decoration:none; color:inherit;">
+            <span class="dessert-emoji">🍮</span>
+            <div class="dessert-title">Kalakhand</div>
+        </a>
+    </div>
+
+    <!-- Dessert Sections -->
+    <div id="cake-section" style="scroll-margin-top:90px;"></div>
+    <section style="max-width:500px;margin:40px auto 60px auto;padding:32px 24px;background:#fffbe7;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.07);text-align:center;">
+        <img src="https://png.pngtree.com/png-clipart/20231002/original/pngtree-colorful-birthday-cake-decorated-with-melted-strawberries-png-image_13063823.png" alt="Cake" style="width:120px;border-radius:12px;box-shadow:0 2px 8px #f6ff47;">
+        <h2 style="color:#8B4513;">Cake</h2>
+        <p style="font-size:1.1em;"> Soft as a hug and sweet as a kiss,cakes are pure edible happiness.🎉</p>
+        <h4>Ingredients:</h4>
+        <ul style="text-align:left;display:inline-block;">
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Eggs</li>
+            <li>Butter</li>
+            <li>Baking powder</li>
+            <li>Milk</li>
+        </ul>
+        <br><a href="#top" class="back-to-top">Back to top</a>
+    </section>
+
+    <div id="gulabjamun-section" style="scroll-margin-top:90px;"></div>
+    <section style="max-width:500px;margin:40px auto 60px auto;padding:32px 24px;background:#fffbe7;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.07);text-align:center;">
+        <img src="https://www.kidmankitchen.com.au/wp-content/uploads/2023/08/gulabjamun._1024x1024@2x.jpg" alt="Gulabjamun" style="width:120px;border-radius:12px;box-shadow:0 2px 8px #ffb347;">
+        <h2 style="color:#8B4513;">Gulabjamun</h2>
+        <p style="font-size:1.1em;">Gulabjamuns are syrupy treasures,soft as dreams and sweet as smile.😍</p>
+        <h4>Ingredients:</h4>
+        <ul style="text-align:left;display:inline-block;">
+            <li>Khoya</li>
+            <li>Flour</li>
+            <li>Sugar syrup</li>
+            <li>Cardamom</li>
+            <li>Rose water</li>
+            <li>Ghee</li>
+        </ul>
+        <br><a href="#top" class="back-to-top">Back to top</a>
+    </section>
+
+    <div id="icecream-section" style="scroll-margin-top:90px;"></div>
+    <section style="max-width:500px;margin:40px auto 60px auto;padding:32px 24px;background:#fffbe7;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.07);text-align:center;">
+        <img src="https://images5.alphacoders.com/654/654072.jpg" alt="Ice Cream" style="width:120px;border-radius:12px;box-shadow:0 2px 8px #b3e0ff;">
+        <h2 style="color:#8B4513;">Ice Cream</h2>
+        <p style="font-size:1.1em;">Life is like an icecream-enjoy it brfore it melts away.💕</p>
+        <h4>Ingredients:</h4>
+        <ul style="text-align:left;display:inline-block;">
+            <li>Milk</li>
+            <li>Cream</li>
+            <li>Sugar</li>
+            <li>Flavoring</li>
+            <li>Egg yolks (optional)</li>
+        </ul>
+        <br><a href="#top" class="back-to-top">Back to top</a>
+    </section>
+
+    <div id="kalakhand-section" style="scroll-margin-top:90px;"></div>
+    <section style="max-width:500px;margin:40px auto 60px auto;padding:32px 24px;background:#fffbe7;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.07);text-align:center;">
+        <img src="https://images.tv9hindi.com/wp-content/uploads/2021/06/PSAPbX1E.jpg" alt="Kalakhand" style="width:120px;border-radius:12px;box-shadow:0 2px 8px #ffe4b5;">
+        <h2 style="color:#8B4513;">Kalakhand</h2>
+        <p style="font-size:1.1em;">Milky, melt-in-the-mouth, and a festival favorite! Kalakhand is pure bliss. ✨</p>
+        <h4>Ingredients:</h4>
+        <ul style="text-align:left;display:inline-block;">
+            <li>Milk</li>
+            <li>Sugar</li>
+            <li>Cardamom</li>
+            <li>Lemon juice</li>
+            <li>Pistachios</li>
+        </ul>
+        <br><a href="#top" class="back-to-top">Back to top</a>
+    </section>
+
+    
+
+</body>
+</html>
